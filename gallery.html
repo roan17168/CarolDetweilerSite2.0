@@ -40,7 +40,11 @@
         <li><a href="readers-react.html">Readers React</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="burger"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div>
+      <div class="burger" aria-label="Toggle navigation menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </nav>
   </header>
 
@@ -48,49 +52,100 @@
     <section class="page-header">
       <div class="container">
         <h1>Reflections from Kosova</h1>
-        <p>Visual moments from Carol’s travels across Kosova (2004–2009), meeting families and witnessing recovery.</p>
+        <p>A photographic journey through the towns, mountain landscapes, historical landmarks, and reunions that inspired the novel.</p>
       </div>
     </section>
 
     <section class="section-padding">
       <div class="container">
+        <!-- 12 Photo Grid -->
         <div class="gallery-grid">
-          <div class="gallery-item" onclick="openLightbox('images/gallery-1.jpg', 'Visiting the Rugova Mountain Gorge outside Peja, 2004')">
-            <img src="images/gallery-1.jpg" alt="Rugova Gorge">
-            <div class="gallery-caption">Rugova Gorge outside Peja</div>
+          
+          <!-- Photo 1 -->
+          <div class="gallery-item" onclick="openLightbox('images/kosova-1.jpg', 'The rugged Balkan mountain ridges overlooking Western Kosova.')">
+            <img src="images/kosova-1.jpg" alt="Balkan Mountain Landscape" loading="lazy">
+            <div class="gallery-caption">Balkan Mountain Landscape</div>
           </div>
-          <div class="gallery-item" onclick="openLightbox('images/gallery-2.jpg', 'Reconnecting with former scholarship students in Prishtina, 2005')">
-            <img src="images/gallery-2.jpg" alt="Scholarship Reunion">
-            <div class="gallery-caption">Student Reunion in Prishtina</div>
+
+          <!-- Photo 2 -->
+          <div class="gallery-item" onclick="openLightbox('images/kosova-2.jpg', 'Quiet streets and village life in rural Kosova.')">
+            <img src="images/kosova-2.jpg" alt="Village in Kosova" loading="lazy">
+            <div class="gallery-caption">Village Streetscape</div>
           </div>
-          <div class="gallery-item" onclick="openLightbox('images/gallery-3.jpg', 'Meeting with Kosova President Fatmir Sejdiu during research interviews')">
-            <img src="images/gallery-3.jpg" alt="Presidential Meeting">
-            <div class="gallery-caption">Meeting President Fatmir Sejdiu</div>
+
+          <!-- Photo 3 -->
+          <div class="gallery-item" onclick="openLightbox('images/kosova-3.jpg', 'Historical memorial site in Prishtina honoring those lost during the 1999 conflict.')">
+            <img src="images/kosova-3.jpg" alt="Historical Memorial in Prishtina" loading="lazy">
+            <div class="gallery-caption">Memorial in Prishtina</div>
           </div>
-          <div class="gallery-item" onclick="openLightbox('images/gallery-4.jpg', 'Traditional stone Kulla in the countryside outside Deçan')">
-            <img src="images/gallery-4.jpg" alt="Traditional Kulla">
-            <div class="gallery-caption">Traditional Kulla Architecture</div>
+
+          <!-- Photo 4 -->
+          <div class="gallery-item" onclick="openLightbox('images/kosova-4.jpg', 'Mountain pass route traveled by refugees fleeing toward neighboring borders.')">
+            <img src="images/kosova-4.jpg" alt="Mountain Pass Border Route" loading="lazy">
+            <div class="gallery-caption">Mountain Pass Route</div>
           </div>
-          <div class="gallery-item" onclick="openLightbox('images/gallery-5.jpg', 'UN checkpoint and rebuilding efforts in Western Kosova, 2004')">
-            <img src="images/gallery-5.jpg" alt="Rebuilding Efforts">
-            <div class="gallery-caption">Post-War Reconstruction</div>
+
+          <!-- Photo 5 -->
+          <div class="gallery-item" onclick="openLightbox('images/kosova-5.jpg', 'A traditional family home rebuilt in the years following the war.')">
+            <img src="images/kosova-5.jpg" alt="Reconstructed Family Home" loading="lazy">
+            <div class="gallery-caption">Rebuilt Family Home</div>
           </div>
-          <div class="gallery-item" onclick="openLightbox('images/gallery-6.jpg', 'A flock of blackbirds taking flight over the historical fields of Kosova')">
-            <img src="images/gallery-6.jpg" alt="Crows over fields">
-            <div class="gallery-caption">Crows Over the Kosovo Fields</div>
+
+          <!-- Photo 6 -->
+          <div class="gallery-item" onclick="openLightbox('images/kosova-6.jpg', 'Carol Detweiler meeting with Kosova President Fatmir Sejdiu during research interviews.')">
+            <img src="images/kosova-6.jpg" alt="Meeting with President Fatmir Sejdiu" loading="lazy">
+            <div class="gallery-caption">With President Fatmir Sejdiu</div>
           </div>
+
+          <!-- Photo 7 -->
+          <div class="gallery-item" onclick="openLightbox('images/kosova-7.jpg', 'The next generation growing up in a peacetime Kosova.')">
+            <img src="images/kosova-7.jpg" alt="Children of Kosova" loading="lazy">
+            <div class="gallery-caption">The Next Generation</div>
+          </div>
+
+          <!-- Photo 8 -->
+          <div class="gallery-item" onclick="openLightbox('images/kosova-8.jpg', 'Expansive countryside and agricultural fields across central Kosova.')">
+            <img src="images/kosova-8.jpg" alt="Kosovar Countryside" loading="lazy">
+            <div class="gallery-caption">Kosovar Countryside</div>
+          </div>
+
+          <!-- Photo 9 -->
+          <div class="gallery-item" onclick="openLightbox('images/kosova-9.jpg', 'Historic stone Kulla architecture surviving through generations.')">
+            <img src="images/kosova-9.jpg" alt="Stone Kulla Architecture" loading="lazy">
+            <div class="gallery-caption">Historic Stone Kulla</div>
+          </div>
+
+          <!-- Photo 10 -->
+          <div class="gallery-item" onclick="openLightbox('images/kosova-10.jpg', 'Reconnecting with former scholarship recipients and their families in Kosova.')">
+            <img src="images/kosova-10.jpg" alt="Reunion with Scholarship Students" loading="lazy">
+            <div class="gallery-caption">Scholarship Student Reunion</div>
+          </div>
+
+          <!-- Photo 11 -->
+          <div class="gallery-item" onclick="openLightbox('images/kosova-11.jpg', 'The dramatic cliffs of the Rugova Canyon near Peja.')">
+            <img src="images/kosova-11.jpg" alt="Rugova Canyon near Peja" loading="lazy">
+            <div class="gallery-caption">Rugova Canyon</div>
+          </div>
+
+          <!-- Photo 12 -->
+          <div class="gallery-item" onclick="openLightbox('images/kosova-12.jpg', 'Blackbirds and crows taking flight over the historical fields of Kosova.')">
+            <img src="images/kosova-12.jpg" alt="Birds flying over Kosovo fields" loading="lazy">
+            <div class="gallery-caption">Crows Over the Field</div>
+          </div>
+
         </div>
       </div>
     </section>
 
     <!-- Lightbox Modal -->
-    <div id="lightbox-modal" class="lightbox-modal">
-      <span class="lightbox-close">&times;</span>
-      <img id="lightbox-img" src="" alt="Enlarged view">
+    <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true">
+      <span class="lightbox-close" aria-label="Close modal">&times;</span>
+      <img id="lightbox-img" src="" alt="Enlarged gallery view">
       <div id="lightbox-caption" class="lightbox-caption"></div>
     </div>
   </main>
 
+  <!-- Footer -->
   <footer>
     <div class="container footer-content">
       <div>
@@ -98,12 +153,13 @@
         <p style="font-size: 0.85rem; margin-top: 6px;">Author of <em>A Murder of Crows Fly with a Red Ribbon</em></p>
       </div>
       <div class="footer-socials">
-        <a href="mailto:CrowsRedRibbon@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.youtube.com/watch?v=UgVMq9b5Pu4" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="mailto:CrowsRedRibbon@gmail.com" title="Email Carol"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.youtube.com/watch?v=UgVMq9b5Pu4" target="_blank" title="YouTube Interview"><i class="fab fa-youtube"></i></a>
       </div>
       <p style="font-size: 0.85rem;">&copy; 2026 Carol Detweiler. All Rights Reserved.</p>
     </div>
   </footer>
+
   <script src="js/scripts.js"></script>
 </body>
 </html>
