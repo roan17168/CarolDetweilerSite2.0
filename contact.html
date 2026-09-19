@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Inquiries | Carol Detweiler</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-title">A Murder of Crows Fly with a Red Ribbon</span>
+        <span class="logo-author">by Carol Detweiler</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-book.html">The Book</a></li>
+        <li><a href="about-author.html">The Author</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Media <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="interview.html">The Interview</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Get Involved <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="scholarship.html">Scholarship Legacy</a></li>
+            <li><a href="book-club.html">Book Club Kit</a></li>
+          </ul>
+        </li>
+        <li><a href="readers-react.html">Readers React</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="burger"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Connect with Carol</h1>
+        <p>Book club visits, speaking engagements, and reader correspondence.</p>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Information Column -->
+          <div class="contact-info">
+            <h2 class="section-title">Get in Touch</h2>
+            <p>Carol Detweiler welcomes messages from readers, book club organizers, educators, former scholarship recipients, and journalists interested in the Kosova war history and refugee experiences.</p>
+            
+            <div style="margin-top: 30px;">
+              <p style="margin-bottom: 12px;"><i class="fas fa-envelope" style="color: var(--crimson); width: 25px;"></i> <strong>Direct Email:</strong> <a href="mailto:CrowsRedRibbon@gmail.com">CrowsRedRibbon@gmail.com</a></p>
+              <p style="margin-bottom: 12px;"><i class="fas fa-map-marker-alt" style="color: var(--crimson); width: 25px;"></i> <strong>Location:</strong> Oregon, United States</p>
+              <p><i class="fas fa-book" style="color: var(--crimson); width: 25px;"></i> <strong>Book Clubs:</strong> Inquire about virtual or in-person author visits.</p>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <form action="mailto:CrowsRedRibbon@gmail.com" method="post" enctype="text/plain">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Jane Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="jane@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Reason for Inquiry</label>
+                <select id="subject" name="subject" class="form-control">
+                  <option value="General Reader Reflection">Reader Reflection / Note to Carol</option>
+                  <option value="Book Club Visit">Book Club Inquiries</option>
+                  <option value="Scholarship Alumni">Scholarship Program Alumni</option>
+                  <option value="Media & Press">Media & Press Inquiries</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" class="form-control" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <div class="footer-logo">Carol Detweiler</div>
+        <p style="font-size: 0.85rem; margin-top: 6px;">Author of <em>A Murder of Crows Fly with a Red Ribbon</em></p>
+      </div>
+      <div class="footer-socials">
+        <a href="mailto:CrowsRedRibbon@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.youtube.com/watch?v=UgVMq9b5Pu4" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+      <p style="font-size: 0.85rem;">&copy; 2026 Carol Detweiler. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflections from Kosova | Photo Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-title">A Murder of Crows Fly with a Red Ribbon</span>
+        <span class="logo-author">by Carol Detweiler</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-book.html">The Book</a></li>
+        <li><a href="about-author.html">The Author</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle active">Media <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="interview.html">The Interview</a></li>
+            <li><a href="gallery.html" class="active">Photo Gallery</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Get Involved <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="scholarship.html">Scholarship Legacy</a></li>
+            <li><a href="book-club.html">Book Club Kit</a></li>
+          </ul>
+        </li>
+        <li><a href="readers-react.html">Readers React</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="burger"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Reflections from Kosova</h1>
+        <p>Visual moments from Carol’s travels across Kosova (2004–2009), meeting families and witnessing recovery.</p>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="gallery-grid">
+          <div class="gallery-item" onclick="openLightbox('images/gallery-1.jpg', 'Visiting the Rugova Mountain Gorge outside Peja, 2004')">
+            <img src="images/gallery-1.jpg" alt="Rugova Gorge">
+            <div class="gallery-caption">Rugova Gorge outside Peja</div>
+          </div>
+          <div class="gallery-item" onclick="openLightbox('images/gallery-2.jpg', 'Reconnecting with former scholarship students in Prishtina, 2005')">
+            <img src="images/gallery-2.jpg" alt="Scholarship Reunion">
+            <div class="gallery-caption">Student Reunion in Prishtina</div>
+          </div>
+          <div class="gallery-item" onclick="openLightbox('images/gallery-3.jpg', 'Meeting with Kosova President Fatmir Sejdiu during research interviews')">
+            <img src="images/gallery-3.jpg" alt="Presidential Meeting">
+            <div class="gallery-caption">Meeting President Fatmir Sejdiu</div>
+          </div>
+          <div class="gallery-item" onclick="openLightbox('images/gallery-4.jpg', 'Traditional stone Kulla in the countryside outside Deçan')">
+            <img src="images/gallery-4.jpg" alt="Traditional Kulla">
+            <div class="gallery-caption">Traditional Kulla Architecture</div>
+          </div>
+          <div class="gallery-item" onclick="openLightbox('images/gallery-5.jpg', 'UN checkpoint and rebuilding efforts in Western Kosova, 2004')">
+            <img src="images/gallery-5.jpg" alt="Rebuilding Efforts">
+            <div class="gallery-caption">Post-War Reconstruction</div>
+          </div>
+          <div class="gallery-item" onclick="openLightbox('images/gallery-6.jpg', 'A flock of blackbirds taking flight over the historical fields of Kosova')">
+            <img src="images/gallery-6.jpg" alt="Crows over fields">
+            <div class="gallery-caption">Crows Over the Kosovo Fields</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal">
+      <span class="lightbox-close">&times;</span>
+      <img id="lightbox-img" src="" alt="Enlarged view">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <div class="footer-logo">Carol Detweiler</div>
+        <p style="font-size: 0.85rem; margin-top: 6px;">Author of <em>A Murder of Crows Fly with a Red Ribbon</em></p>
+      </div>
+      <div class="footer-socials">
+        <a href="mailto:CrowsRedRibbon@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.youtube.com/watch?v=UgVMq9b5Pu4" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+      <p style="font-size: 0.85rem;">&copy; 2026 Carol Detweiler. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

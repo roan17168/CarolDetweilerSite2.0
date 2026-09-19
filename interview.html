@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Interview | Libri Podcast with Carol Detweiler</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-title">A Murder of Crows Fly with a Red Ribbon</span>
+        <span class="logo-author">by Carol Detweiler</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-book.html">The Book</a></li>
+        <li><a href="about-author.html">The Author</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle active">Media <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="interview.html" class="active">The Interview</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Get Involved <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="scholarship.html">Scholarship Legacy</a></li>
+            <li><a href="book-club.html">Book Club Kit</a></li>
+          </ul>
+        </li>
+        <li><a href="readers-react.html">Readers React</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="burger"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>In Her Own Words</h1>
+        <p>Conversations with Carol Detweiler & Kushtrim Hoxha on the Libri Podcast</p>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <!-- Podcast Attribution Banner -->
+        <div class="podcast-attribution">
+          <i class="fas fa-microphone-alt" style="margin-right: 8px;"></i> This Podcast was hosted by Anita and Berat Bllaca at their Libri bookstore/café in Yorktown Heights, New York.
+        </div>
+
+        <!-- Embedded YouTube Player -->
+        <div class="video-player-wrapper">
+          <div id="player"></div>
+        </div>
+
+        <!-- 10 Jump Points -->
+        <h2 class="section-title" style="margin-bottom: 30px;">Key Moments — Jump to Chapter</h2>
+        <p class="section-subtitle" style="margin-left: 0; margin-bottom: 30px;">Click any timestamp below to jump directly to that conversation in the video above.</p>
+
+        <ul class="timestamp-list">
+          <li class="timestamp-item" onclick="seekTo(242)" role="button" tabindex="0">
+            <span class="timestamp-badge">04:02</span>
+            <div class="timestamp-content">
+              <h4>The One-Bag Reality</h4>
+              <p>Carol reflects on seeing refugee students arrive at college with a single change of clothes in one bag, while American students unloaded carloads.</p>
+            </div>
+          </li>
+
+          <li class="timestamp-item" onclick="seekTo(318)" role="button" tabindex="0">
+            <span class="timestamp-badge">05:18</span>
+            <div class="timestamp-content">
+              <h4>The Invisible Baggage</h4>
+              <p>Exploring the profound emotional trauma of war, loss of family, and lost homeland that students carried silently beneath the surface.</p>
+            </div>
+          </li>
+
+          <li class="timestamp-item" onclick="seekTo(381)" role="button" tabindex="0">
+            <span class="timestamp-badge">06:21</span>
+            <div class="timestamp-content">
+              <h4>Unlocking the Iron Door</h4>
+              <p>Carol describes her role simply as unlocking a heavy iron door that each student had to courageously push through to achieve their goals.</p>
+            </div>
+          </li>
+
+          <li class="timestamp-item" onclick="seekTo(638)" role="button" tabindex="0">
+            <span class="timestamp-badge">10:38</span>
+            <div class="timestamp-content">
+              <h4>From Refugee Camp to Actor</h4>
+              <p>Kushtrim Hoxha recounts fleeing to Macedonia, arriving in California, and securing the scholarship that launched his acting career.</p>
+            </div>
+          </li>
+
+          <li class="timestamp-item" onclick="seekTo(899)" role="button" tabindex="0">
+            <span class="timestamp-badge">14:59</span>
+            <div class="timestamp-content">
+              <h4>The Agony of Choice</h4>
+              <p>Carol shares the heartbreaking story of two sisters who turned down college scholarships to work in a chicken factory to support their parents.</p>
+            </div>
+          </li>
+
+          <li class="timestamp-item" onclick="seekTo(1813)" role="button" tabindex="0">
+            <span class="timestamp-badge">30:13</span>
+            <div class="timestamp-content">
+              <h4>The Symbolism of the Red Ribbon</h4>
+              <p>How the red ribbon threads together memory, faith, resilience, and the fragile hope that sustained refugees through displacement.</p>
+            </div>
+          </li>
+
+          <li class="timestamp-item" onclick="seekTo(2385)" role="button" tabindex="0">
+            <span class="timestamp-badge">39:45</span>
+            <div class="timestamp-content">
+              <h4>Crossing Into Freedom</h4>
+              <p>Carol reads an excerpt about arriving at JFK, crossing the Brooklyn Bridge, and carrying the internal weights of loss even after safety.</p>
+            </div>
+          </li>
+
+          <li class="timestamp-item" onclick="seekTo(2990)" role="button" tabindex="0">
+            <span class="timestamp-badge">49:50</span>
+            <div class="timestamp-content">
+              <h4>The Bitter Burning Pages</h4>
+              <p>A visceral reading depicting the burning of Albanian books and literature, leaving a bitter taste but an unbreakable hunger for learning.</p>
+            </div>
+          </li>
+
+          <li class="timestamp-item" onclick="seekTo(3332)" role="button" tabindex="0">
+            <span class="timestamp-badge">55:32</span>
+            <div class="timestamp-content">
+              <h4>The Spirit of Hospitality</h4>
+              <p>Carol reads from her 2004 journal reflection about visiting Kosova and discovering the legendary warmth and welcoming spirit of its people.</p>
+            </div>
+          </li>
+
+          <li class="timestamp-item" onclick="seekTo(3551)" role="button" tabindex="0">
+            <span class="timestamp-badge">59:11</span>
+            <div class="timestamp-content">
+              <h4>The Crows and the Ribbon</h4>
+              <p>Carol summarizes the central meaning of the book's title: the crows representing battlefield devastation and the ribbon representing hope.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <div class="footer-logo">Carol Detweiler</div>
+        <p style="font-size: 0.85rem; margin-top: 6px;">Author of <em>A Murder of Crows Fly with a Red Ribbon</em></p>
+      </div>
+      <div class="footer-socials">
+        <a href="mailto:CrowsRedRibbon@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.youtube.com/watch?v=UgVMq9b5Pu4" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+      <p style="font-size: 0.85rem;">&copy; 2026 Carol Detweiler. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
