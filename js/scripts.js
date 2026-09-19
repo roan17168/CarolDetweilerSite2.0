@@ -1,16 +1,17 @@
 /**
- * CAROL DETWEILER AUTHOR WEBSITE - SCRIPTS
- * YouTube IFrame API Controller, Mobile Navigation, Accordion, Lightbox Modal
+ * CAROL DETWEILER AUTHOR WEBSITE - PRODUCTION JAVASCRIPT
+ * Handles navigation, mobile accordion drawers, YouTube IFrame seek triggers, and accessible modal lightboxes.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   initNav();
   initAccordions();
   initLightbox();
+  initKeyboardAccess();
 });
 
 /* ==========================================================================
-   NAVIGATION LOGIC
+   NAVIGATION
    ========================================================================== */
 function initNav() {
   const burger = document.querySelector('.burger');
@@ -23,7 +24,7 @@ function initNav() {
     });
   }
 
-  // Mobile Dropdown Click Handler
+  // Mobile Dropdown Toggle Handler
   const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
   dropdownToggles.forEach(toggle => {
     toggle.addEventListener('click', (e) => {
@@ -37,7 +38,7 @@ function initNav() {
 }
 
 /* ==========================================================================
-   YOUTUBE IFRAME API & JUMP-POINTS
+   YOUTUBE IFRAME API & VERIFIED JUMP POINTS
    ========================================================================== */
 let player;
 
@@ -50,7 +51,8 @@ function onYouTubeIframeAPIReady() {
       videoId: 'UgVMq9b5Pu4',
       playerVars: {
         playsinline: 1,
-        rel: 0
+        rel: 0,
+        modestbranding: 1
       }
     });
   }
@@ -65,7 +67,7 @@ function seekTo(seconds) {
       playerWrapper.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   } else {
-    // Fallback if API hasn't loaded or direct embed
+    // Fallback if direct iframe replacement is active
     const iframe = document.querySelector('#player');
     if (iframe && iframe.tagName === 'IFRAME') {
       iframe.src = `https://www.youtube.com/embed/UgVMq9b5Pu4?start=${seconds}&autoplay=1`;
@@ -75,7 +77,7 @@ function seekTo(seconds) {
 }
 
 /* ==========================================================================
-   ACCORDIONS (Book Club Questions)
+   ACCORDIONS (Book Club Discussion Questions)
    ========================================================================== */
 function initAccordions() {
   const accordions = document.querySelectorAll('.accordion-header');
@@ -88,7 +90,7 @@ function initAccordions() {
 }
 
 /* ==========================================================================
-   LIGHTBOX MODAL
+   LIGHTBOX MODAL (Photo Gallery)
    ========================================================================== */
 function initLightbox() {
   const modal = document.getElementById('lightbox-modal');
@@ -104,15 +106,38 @@ function initLightbox() {
     modal.classList.add('active');
   };
 
+  function closeModal() {
+    modal.classList.remove('active');
+  }
+
   if (closeBtn) {
-    closeBtn.addEventListener('click', () => {
-      modal.classList.remove('active');
-    });
+    closeBtn.addEventListener('click', closeModal);
   }
 
   modal.addEventListener('click', (e) => {
     if (e.target === modal) {
-      modal.classList.remove('active');
+      closeModal();
     }
+  });
+
+  // Escape key support
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+}
+
+/* ==========================================================================
+   KEYBOARD ACCESSIBILITY
+   ========================================================================== */
+function initKeyboardAccess() {
+  document.querySelectorAll('.timestamp-item').forEach(item => {
+    item.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        item.click();
+      }
+    });
   });
 }
