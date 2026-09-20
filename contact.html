@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact & Inquiries | Carol Detweiler</title>
+  <title>Contact | Carol Detweiler</title>
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -32,71 +32,77 @@
         </li>
         <li><a href="readers-react.html">Readers React</a></li>
         <li><a href="book-club.html">Book Club Kit</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
-      <div class="burger" aria-label="Toggle navigation menu">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
+      <div class="burger"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div>
     </nav>
   </header>
 
   <main>
     <section class="page-header">
       <div class="container">
-        <h1>Connect with Carol</h1>
-        <p>Book club visits, speaking engagements, and reader correspondence.</p>
+        <h1>Get in Touch with Carol</h1>
+        <p>Book clubs, media, educators, and readers — Carol would love to hear from you.</p>
       </div>
     </section>
 
     <section class="section-padding">
       <div class="container">
         <div class="contact-grid">
-          <!-- Information Column -->
+          <!-- Contact Info Column -->
           <div class="contact-info">
-            <h2 class="section-title">Get in Touch</h2>
-            <p>Carol Detweiler welcomes messages from readers, book club organizers, educators, former scholarship recipients, and journalists interested in the Kosova war history and refugee experiences.</p>
+            <h2 class="section-title">Reach Out</h2>
+            <p>Whether you're a reader with a question, a book club looking for a guest speaker, a journalist requesting an interview, or an educator interested in bringing this story to your classroom — Carol would love to hear from you.</p>
             
             <div style="margin-top: 30px;">
-              <p style="margin-bottom: 12px;"><i class="fas fa-envelope" style="color: var(--crimson); width: 25px;"></i> <strong>Direct Email:</strong> <a href="mailto:CrowsRedRibbon@gmail.com">CrowsRedRibbon@gmail.com</a></p>
-              <p style="margin-bottom: 12px;"><i class="fas fa-map-marker-alt" style="color: var(--crimson); width: 25px;"></i> <strong>Location:</strong> Oregon, United States</p>
-              <p><i class="fas fa-book" style="color: var(--crimson); width: 25px;"></i> <strong>Book Clubs:</strong> Inquire about virtual or in-person author visits.</p>
+              <p style="margin-bottom: 12px;"><i class="fas fa-envelope" style="color: var(--crimson); width: 25px;"></i> <strong>Email:</strong> <a href="mailto:CrowsRedRibbon@gmail.com">CrowsRedRibbon@gmail.com</a></p>
+              <p style="margin-bottom: 12px;"><i class="fas fa-map-marker-alt" style="color: var(--crimson); width: 25px;"></i> <strong>Location:</strong> Oregon, USA</p>
             </div>
           </div>
 
-          <!-- Contact Form -->
+          <!-- Restored Original Form -->
           <div class="contact-form">
-            <form action="mailto:CrowsRedRibbon@gmail.com" method="post" enctype="text/plain">
+            <form onsubmit="handleFormSubmit(event)">
               <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" class="form-control" placeholder="Jane Doe" required>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" class="form-control" required>
               </div>
 
               <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="jane@example.com" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-control" required>
               </div>
 
               <div class="form-group">
-                <label for="subject">Reason for Inquiry</label>
-                <select id="subject" name="subject" class="form-control">
-                  <option value="General Reader Reflection">Reader Reflection / Note to Carol</option>
-                  <option value="Book Club Visit">Book Club Inquiries</option>
-                  <option value="Scholarship Alumni">Scholarship Program Alumni</option>
-                  <option value="Media & Press">Media & Press Inquiries</option>
+                <label for="reason">I'm reaching out as a...</label>
+                <select id="reason" name="reason" class="form-control" required>
+                  <option value="">Please select...</option>
+                  <option>Reader</option>
+                  <option>Book Club Host</option>
+                  <option>Educator</option>
+                  <option>Journalist / Media</option>
+                  <option>Scholarship Inquiry</option>
+                  <option>Other</option>
                 </select>
               </div>
 
               <div class="form-group">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" class="form-control" placeholder="Write your message here..." required></textarea>
+                <textarea id="message" name="message" class="form-control" rows="6" required></textarea>
               </div>
 
               <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
             </form>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section-padding" style="background: var(--charcoal); color: #FFFFFF; text-align: center;">
+      <div class="container">
+        <h2 style="color: #FFFFFF; font-size: 2.2rem; margin-bottom: 16px;">Order the Book</h2>
+        <p style="color: #D0D0D0; max-width: 650px; margin: 0 auto 30px;"><em>A Murder of Crows Fly with a Red Ribbon</em> is available now on Amazon in Hardcover, Paperback, and eBook.</p>
+        <a href="https://www.amazon.com/dp/B0DJPLSQM6" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fab fa-amazon"></i> Order on Amazon</a>
       </div>
     </section>
   </main>
@@ -114,6 +120,7 @@
       <p style="font-size: 0.85rem;">&copy; 2026 Carol Detweiler. All Rights Reserved.</p>
     </div>
   </footer>
+
   <script src="js/scripts.js"></script>
 </body>
 </html>
